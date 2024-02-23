@@ -5,7 +5,7 @@ app.get("/pad/:number", (req, res) => {
   const { number } = req.params;
   const paddedNumber = number.toString().padStart(8, " ");
 
-  res.send(paddedNumber);
+  res.send(`\`${paddedNumber}\``);
 });
 
 const PORT = 3000;
